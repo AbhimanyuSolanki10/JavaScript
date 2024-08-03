@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing in js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ! Drawback -->
+    <!-- <h1>Debouncing and Throttling in Js</h1>
+    <input type="text" id="search" placeholder="Search anything" onkeyup="getData()">
+    <button id="btn" onclick="task()">Click</button> -->
+
+    <!-- !Solve using Debouncing -->
+    <h1>Debouncing and Throttling in Js</h1>
+    <input type="text" id="search" placeholder="Search anything" onchange="myFunc()">
+    <button id="btn" onclick="task()">Click</button>
+
+    <!-- ! Deboundcing is a technique where you delay the execution of  a function  until after a cetain amount of time has passed  -->
+    <!-- ! Deboundcing is commenly used to enhance browser performance  -->
+    <!-- ! It is mostly use in fequently used function such as scroll event , resize event, search event etc. -->
+
+    <!--todo  Throtlling :- Throthlling is similar technique to Deboundcing but insted of delaying the execution it limits the rate at which a function is called -->
+    <!--todo It is used in mouse move events -->
+    <!--todo It may be called repeatedly but the attach function will be executed only once in a given time -->
+    <script src="./debounce.js"></script>
+    <script src="Throttling.js"></script>
+</body>
+</html>
+
