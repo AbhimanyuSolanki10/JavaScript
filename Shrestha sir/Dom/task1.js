@@ -1,5 +1,5 @@
 //! NodeList = Impure Array
-//! HTML COLLECTION  = Impure Object it work lives
+//!  HTML COLLECTION  = Impure Object it work lives
 
 // const divTags = document.getElementsByClassName('iteam')
 
@@ -17,11 +17,11 @@
 
 //! If we want to convert impure array or non array into array we use .from method
 
-// const divs =document.querySelectorAll('div')
-// const newArray=Array.from(divs)
-// newArray.filter((val,i,array)=>{
-//     const mid =Math.floor(array.length/2)
-//     if(i>mid){
-//         val.style.color="deeppink"
-//     }
-// })
+const divs =document.querySelectorAll('div')
+const newArray=Array.from(divs)
+newArray.filter((val,i,array)=>{
+    const mid =Math.floor(array.length/2)
+    if(i>mid){
+        val.style.color="deeppink"
+    }
+})
