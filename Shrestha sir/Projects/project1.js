@@ -24,13 +24,13 @@ startButton.addEventListener('click',()=>{
     id=  setInterval(updateColor,1000);
 })
 
-// 4. start button
+// 4. stop button
 const stopButton = document.getElementById('stop');
 stopButton.addEventListener('click',()=>{
     clearInterval(id)
 })
 
-// 5. start button
+// 5. clear button
 const clearButton =document.getElementById('clear');
 clearButton.addEventListener('click',()=>{
 clearInterval(id);
@@ -63,7 +63,6 @@ navigator.clipboard.writeText(input.value)
 
 }
 copyButton.addEventListener("click",copyColorCode)
-
 
 
 

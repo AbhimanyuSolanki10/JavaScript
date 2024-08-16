@@ -15,44 +15,54 @@
     // ?4: It can't start with number but it can contain number 
     
 // !Puntuaters are use for code sepration 
-// ?operators are special Symbol use to perform specific task between operands
-// ?1: arithmatic operators + - * / % 
-// ?2: assignment operators  = , += ,-= ,/= ,*=
-// ?3: comparision operators == , === , > ,< , >= , <= ,!=
+
+
+//todo  operators are special Symbol use to perform specific task between operands
+
+//todo  TYPES OF OPERATORS
+//! 1: arithmatic operators + - * / % 
+//! 2: assignment operators  = , += ,-= ,/= ,*=
+//! 3: comparision operators == , === , > ,< , >= , <= ,!=
 // ? == is use for compare value and === is use for compare data types and value 
-// ?4: logical operators  && if both are true then output is true || if any one is true the output is true
+//! 4: logical operators  && if both are true then output is true || if any one is true the output is true
 // ?console.log(10 !== '10')
 // ?if(true && false){
 // ?    console.log("both are same")
-// ?5: Bitwise operators & ,| , ~,^, << ,>>
-// ?6: String operators (+) , (+=)
+//! 5: Bitwise operators & ,| , ~,^, << ,>>
+//! 6: String operators (+) , (+=)
 // ? let first = "abhimanyu";
 // ? first+="solanki";
 // ? console.log(first)
-// ? 7: Conditional operators :- condition ? expression 1 : expression 2;
-// ? 8: Type operator :- 1: TypeOf() , 2: instanceof
+//!  7: Conditional operators :- condition ? expression 1 : expression 2;
+//!  8: Type operator :- 1: TypeOf() , 2: instanceof
+// let a=[10];
+// console.log(typeof(a))
+// console.log(a instanceof Array)
+
+//! 2: instanceof
+//?  The instanceof operator in JavaScript is used to check the type of   an object at run time. It returns a boolean value if true then it indicates that the object is an instance of a particular class and if false then it is not. 
 
 
 // }
-//todo   let and const are introduced in ES6 const is introduced in start
+//todo   let and const are introduced in ES6 const is introduced in starting
 
 
 
 // !            Declare and Intialization   ||  Declarization  || Initialization  || Redeclarization || Reinitialization
    
      
-// !var             Yes var a=10                 Yes  var a;         Yes a=10          Yes var a;          Yes var = 10;
+// !var             Yes var a=10                 Yes  var a;         Yes a=10          Yes var a;          Yes var a = 10;
 // !                                                                                       var a;            a=20;
 
 
-// !Let             Yes let a=10                 Yes  let a;         Yes a=10          No let a;          Yes let = 10;
+// !Let             Yes let a=10                 Yes  let a;         Yes a=10          No let a;          Yes let a= 10;
 // !                                                                                      let a;               a=20;
 
 
-// !const             Yes const a=10               No  const a;         NO a=10          No const a;          No const = 10;
-// !                                                                     const c             const a;            a=20;
+// !const           Yes const a=10               No  const a;         NO a=10          No const a;          No const a = 10;
+// !                                                                     const c           const a;            a=20;
 
-//  Datatypes 
+//todo-------------------------------------------------------------------------Datatypes----------------------------------------------------------------------------- 
 //  let a = 999999999999999999999
 //  console.log(a)
 //  number is divided in two category 10n is bigint -(2^53) - 1  to +(2^53) - 1  if number cross this limit then it comes under the bigint
@@ -70,14 +80,14 @@
 //  let Tinkikabf = `Pinku`
 //  console.log(name)
 
-//? template litteral means using multi line string inside backtiks  and interpolation  is use to access any variable using ${} are advantages in backticks` 
+//? template litteral means using multi line string inside backtiks ` ` and interpolation  is use to access any variable using ${} are advantages in backticks` 
 // let intro = `my name is "abhimanyu" 
 // and i live in  'Noida' and ${friends} is my friend`
 // console.log(intro)
 
 // let isLoggedin = true
 // console.log(Boolean(()=>{})) 
-//! " " ,-1,{},[],()=>{}  get true except 0 ,"" , undefined , Nan , Null
+//! " " , -1 , {} , [] , ()=>{}  get true except 0 , "" , undefined , Nan , Null
 // let value = Boolean(0)
 // console.log(value)
 
@@ -98,8 +108,8 @@
 // let productInfo = (`the name of the product is ${name} . and its price is ${price} rupess` )
 // console.log(productInfo)
 
-//! Primitive Datatypes they are 8 types
-//! Number , Bigint , Boolean , NaN , null , undefined, string , Symbol
+//todo Primitive Datatypes they are 8 types
+//! Number , NaN , null, Bigint , Boolean  , undefined, string , Symbol
 
 // let s1 = Symbol(10)
 // let s2 = Symbol(10)
@@ -114,7 +124,7 @@
 // let b = false
 // console.log(a == b)
 
-//! Non Premitive Datatypes
+//todo   Non Premitive Datatypes
 //! Array , Object  and Function
 
 //* Functions
@@ -164,7 +174,7 @@
 // function for addition 
 // let add = (a,b)=>{
 //     console.log("addition of a and b is" + (a+b))
-//     //* when we use , concetination is not happening when we use + it will merge 
+//? when we use , concetination is not happening when we use + it will merge 
 //     console.log(`addition of ${a} and ${b} is`,(a+b))
 // }
 // add(10,2)
@@ -176,23 +186,23 @@
 // add(20,40)
 
 // console.log(add(20,20))
-//* Prompt command is used to take input from the user and it takes input as a string
+//? Prompt command is used to take input from the user and it takes input as a string
 // let num1 = prompt("Enter num1")
 // let num2 = prompt("Enter num2")
 // console.log(typeof(num1))
 
-//* String should have number only as the input othewise it will give NaN.
+//? String should have number only as the input othewise it will give NaN.
 // let a = Number(num1)
 // let b = Number(num2)
 // console.log(a)
 // console.log(b)
 
-//* typecasting using Number 
+//! typecasting using Number 
 // let a = Number(num1)
 // typecasting using parseInt 
-//* let b = parseInt(num2)
+// let b = parseInt(num2)
 
-//* parseInt :- Sting should start with number otherwise it will give NaN
+//! parseInt :- Sting should start with number otherwise it will give NaN
 // console.log(a+b)
 // console.log(Number(num1) + Number(num2))
 
@@ -204,36 +214,28 @@
 
 // let add = (a,b)=>{
 //     return a+b , "Hello"
-    // last value you give to return it will give as output not both statements
+//? Whatever the last value given to the return statement it will give the output of that value not previous value you give before last satement.
 // }
 // console.log(`addition of ${num1} and ${num2} is =>>>>>`+ " " + add(num1,num2))
 
-// *Higer order function and Call back function 
-//* higher order function is a function which is taking another func as an argument
-//* callback is a function which is pass to another func as an argument
-// let a= (func) =>{
-//     func()
-// }
+//todo------------------ Higer order function -------------------------------------------------------------------- 
+//? higher order function is a function which is taking another function as an argument.
+//todo------------------ Call Back function -------------------------------------------------------------------- 
+//? callback is a function which is pass to another function as an argument.
 
-// let anyfunction = () => {
-//     console.log("any function executed")
-// }
-// a(anyfunction)
-// a(anyfunction)
-
-// let hof = (cbf)=>{
+// let hof = (cbf)=>{  
 //     cbf()
 // }
 // let cbf = ()=>{
 //     console.log("cbf executed")
-// }
+// } 
 // hof(cbf)
 
 
 // let operation = (task,num1 , num2) =>{
 //     task(num1,num2)
-    // console.log(task)
-// }
+//     console.log(task)
+// }           
 // let add =(a,b) =>{
 //     console.log(a+b)
 // }
@@ -1018,7 +1020,10 @@
 // obj.test()
 
 //! What is call, apply ,bind method?
+
 //!answer :-  we just have to pass the refference of object in that function 
+//! Purpose: Invokes a function with a specific this value and individual arguments.
+//! When to Use: Use call() when you want to immediately invoke a function and specify what this should refer to, while passing the arguments individually.
 
 // ! CALL MEHTOD 
 // let obj = {
@@ -1047,6 +1052,8 @@
 
 // ! APPLY MEHTOD 
 // ! It is used to call more than one argument 
+//! Purpose: Invokes a function with a specific this value and arguments provided as an array or array-like object.
+//! When to Use: Use apply() when you want to immediately invoke a function and specify what this should refer to, while passing the arguments as an array.
 // let obj ={
 //     name:"Tinku",
 //     age:22,
@@ -1060,21 +1067,22 @@
  
 
 // ! BIND MEHTOD 
-
 // !IT WILL NOT CALL IMMEDIATLY 
+// !Purpose: Creates a new function that, when called, has its this value set to a specific object. It does not invoke the function immediately but returns a new function that you can call later.
+// !When to Use: Use bind() when you want to create a new function with a preset this value and possibly some initial arguments, which you can call later.
 
-// let obj ={
-//     name:"Tinku",
-//     age:22,
-//     add:"Noida"
-// }
-//  function info(a,b){
-//     console.log(`my name is ${this.name} and my age is ${this.age} i live in ${this.add} `)
-//     console.log(a+b)
-//  }
+let obj ={
+    name:"Tinku",
+    age:22,
+    add:"Noida"
+}
+ function info(a,b){
+    console.log(`my name is ${this.name} and my age is ${this.age} i live in ${this.add} `)
+    console.log(a+b)
+ }
 
-// let returnedFunc= info.bind(obj)
-// returnedFunc(10,20)
+let returnedFunc= info.bind(obj)
+returnedFunc(10,20)
 
 // !ARRAY 
 // !it is a continous block of memory which contain hetrogenous data .
