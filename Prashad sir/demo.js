@@ -127,9 +127,9 @@
 //todo   Non Premitive Datatypes
 //! Array , Object  and Function
 
-//* Functions
-//* Functions are nothing but the methods 
-//* function are the reuseable block of code 
+//! Functions
+//? Functions are nothing but the methods    
+//? function are the reuseable block of code 
 
 // function bookticket (location){
 //     console.log(`Ticket booked for ${location}..|`)
@@ -304,7 +304,7 @@
 
 // greeting(brother,"paise wapas kab dega....?")
 
-//* Anonymous function this is also called function as expression 
+//todo ---------------------------------------------  Anonymous function this is also called function as expression ----------------------------------------------------
 // let demo = function(){
 //     console.log("This is Anonymous function")
 // }
@@ -316,36 +316,36 @@
 // console.log(result)
 
 
-// fuction assigned to a variable is called as function as an expression
+//! fuction assigned to a variable is called as function as an expression
 // let func = () =>{
 
 // }
 // func()
 
-//* This is named function
+//! This is named function
 //  function demo1 (){
 //     console.log("this is named function")
 // }
 // demo1()
 
 
-//* types of function
-//* Simple fucntion with function keywords
-//* Arrow function
-//* Higher Order function
-//* Callback function 
-//* Annonymous Function
-//* Named fucntion 
-//* Funciton as an Expression
-//* Parametrized function 
-//* Immediate Invoke function (() =>{}) ()
+//! types of function
+//! Simple fucntion with function keywords
+//! Arrow function
+//! Higher Order function
+//! Callback function 
+//! Annonymous Function
+//! Named fucntion 
+//! Funciton as an Expression
+//! Parametrized function 
+//! Immediate Invoke function (() =>{}) ()
 // (()=>{
 //     console.log("iife = immediate invoke function")
 // })()
 
 
-//* Advantages
-//* We dont have to give any name and it will call immediately  and we can't use multiple times
+//! Advantages
+//! We dont have to give any name and it will call immediately  and we can't use multiple times
 
 
 // console.log("x")
@@ -525,8 +525,8 @@
 //     }
 //     return tinku
 // }
-// let returnedFunc = minku()
-// returnedFunc()
+// let returnedFu = minku();
+// returnedFu();
 
 
 //* ability of js engine to search for the variable from the function even the function are removed from the call stacks and these value are stored in closure
