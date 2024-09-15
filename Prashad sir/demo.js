@@ -23,16 +23,16 @@
 //! 1: arithmatic operators + - * / % 
 //! 2: assignment operators  = , += ,-= ,/= ,*=
 //! 3: comparision operators == , === , > ,< , >= , <= ,!=
-// ? == is use for compare value and === is use for compare data types and value 
+//?  == is use for compare value and === is use for compare data types and value 
 //! 4: logical operators  && if both are true then output is true || if any one is true the output is true
-// ?console.log(10 !== '10')
-// ?if(true && false){
-// ?    console.log("both are same")
+// console.log(10 !== '10')
+// if(true && false){
+//     console.log("both are same")
 //! 5: Bitwise operators & ,| , ~,^, << ,>>
 //! 6: String operators (+) , (+=)
-// ? let first = "abhimanyu";
-// ? first+="solanki";
-// ? console.log(first)
+//  let first = "abhimanyu";
+//  first+="solanki";
+//  console.log(first)
 //!  7: Conditional operators :- condition ? expression 1 : expression 2;
 //!  8: Type operator :- 1: TypeOf() , 2: instanceof
 // let a=[10];
@@ -40,8 +40,7 @@
 // console.log(a instanceof Array)
 
 //! 2: instanceof
-//?  The instanceof operator in JavaScript is used to check the type of   an object at run time. It returns a boolean value if true then it indicates that the object is an instance of a particular class and if false then it is not. 
-
+//?  The instanceof operator in JavaScript is used to check the type of an object at run time. It returns a boolean value if true then it indicates that the object is an instance of a particular class and if false then it is not. 
 
 // }
 //todo   let and const are introduced in ES6 const is introduced in starting
@@ -101,7 +100,6 @@
 // let name = prompt("enter your name")
 // console.log(name)
 
-
 // let price = "100"
 // let name = "Tshirt"
 
@@ -115,7 +113,7 @@
 // let s2 = Symbol(10)
 // console.log(s1 == s2)
 
-// Symbol is used when we have to use same value as different different representation
+//! Symbol is used when we have to use same value as different different representation
 // let s12 = 10
 // let s22 = 10
 // console.log(s12 == s22)
@@ -146,7 +144,7 @@
 // shadi("flowers")
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//* Default Parameters
+//! Default Parameters
 
 // function introduction(name="JohnDoe",email="jonedoe@gmail.com",phone="9856321478",age="38") {
 //     console.log(`My name is "${name}" , my email is "${email}" , my contact no is "${phone}" and my age is ${age}`)
@@ -156,7 +154,7 @@
 // introduction()
 
 
-//* Arrow Function
+//! Arrow Function
 
 // let functName  = (parameters)=>{
 //     function body
@@ -173,9 +171,9 @@
 
 // function for addition 
 // let add = (a,b)=>{
-//     console.log("addition of a and b is" + (a+b))
+    // console.log("addition of a and b is" + (a+b))
 //? when we use , concetination is not happening when we use + it will merge 
-//     console.log(`addition of ${a} and ${b} is`,(a+b))
+    // console.log(`addition of ${a} and ${b} is`,(a+b))
 // }
 // add(10,2)
 
@@ -202,12 +200,12 @@
 // typecasting using parseInt 
 // let b = parseInt(num2)
 
-//! parseInt :- Sting should start with number otherwise it will give NaN
+//! parseInt :- String should start with number otherwise it will give NaN
 // console.log(a+b)
 // console.log(Number(num1) + Number(num2))
 
 
-// taking input from user using promt and adding it using arrow function 
+//! taking input from user using promt and adding it using arrow function 
 
 // let num1 = parseInt(prompt("Enter Num1"))
 // let num2 = parseInt(prompt("Enter Num2"))
@@ -225,6 +223,7 @@
 
 // let hof = (cbf)=>{  
 //     cbf()
+//     console.log("hof executed")
 // }
 // let cbf = ()=>{
 //     console.log("cbf executed")
@@ -356,8 +355,8 @@
 // func()
 
 
-//* global execution context is created when any variable is declared it is two phases 
-//* declaration phase and execution phase
+//! global execution context is created when any variable is declared it is two phases 
+//! declaration phase and execution phase
 // let a = 10
 
 // let func1= ()=>{
@@ -365,9 +364,9 @@
 // }
 // func1()
 
-//* Non primitive data types and  primitive data types start with var wale variables store honge heap area mai 
-//* console , window , alert, document  is an object which is stored in Heap area or we can say default objects 
-//* let and const wale variables store in call stak. 
+//! Non primitive data types and  primitive data types start with var wale variables store honge heap area mai 
+//! console , window , alert, document  is an object which is stored in Heap area or we can say default objects 
+//! let and const wale variables store in call stack. 
 
 // console.log("1")
 // let func = (a)=>{
@@ -378,17 +377,17 @@
 // console.log("3")
 
 // console.log(window)
-//* window object is the parent object in javascript
+//! window object is the parent object in javascript
 // alert("something")
-//* first level object in window are direct accessible  nested objects are not directly accesible
+//! first level object in window are direct accessible  nested objects are not directly accesible
 
 // var a1 = 10
 // let a2 = 20
 // console.log(window)
-//* variable declared with var are stored in window object 
-//* whenever a fucntion calls new function execution context is created
-//* global execution context is created in which it has two phases variable declartion and variable execution 
-//* parameter within function also comes under declartion context
+//! variable declared with var are stored in window object 
+//! whenever a fucntion calls new function execution context is created
+//! global execution context is created in which it has two phases variable declartion and variable execution 
+//! parameter within function also comes under declartion context
 // let a = 10
 // let func = ()=>{
 //     let m = "m"
@@ -406,23 +405,25 @@
 // let reply = call(que)
 // console.log(reply)
 
-//* this will point to window object 
+//! this will point to window object 
 // console.log(b)
 // let a =10
 // let b 
 // const c =30
 // console.log(b)
-//todo the time span between var declaration and its Initialization its called temporal dead zone
+
+
+//todo the time span between variable declaration and its Initialization its called temporal dead zone
 //todo it is a phenomenon of sending the declaration to the top of the execution context is called hoisting
 //todo  a,b,c ka send karna top of execution phase  hoisting hai 
 //todo if a var within a temporal dead zone we get undefined
-//todo if we want to access any variable start with let and const which is in tmp dead zone we get error but var wale variable give undefined because variable declare with var are stored in windows object 
+//todo if we want to access any variable start with let and const which is in temporal  dead zone we get error but var wale variable give undefined because variable declare with var are stored in windows object 
 
 //  a =20
 //  console.log(window)
-//*  a = 20 is almost similar to var a = 20 because it is also stored in windos object
-//*  var let const declare the behaviour of the variable
-//*  var se declare wale variables in the windows object so they give undefined
+//!  a = 20 is almost similar to var a = 20 because it is also stored in windos object
+//!  var let const declare the behaviour of the variable
+//!  var se declare wale variables in the windows object so they give undefined
 
 // console.log(a)
 //  let a = 10
@@ -437,7 +438,7 @@
 
 
 //! scope
-// *scope means where our variable is declare
+//! scope means where our variable is declare
 
 // let a = 10
 // console.log(a)
@@ -450,19 +451,19 @@
 
 
 
-//*                 Scope 
-//*                   |
-//*                  |
-//*   ----------------------------------
-//*   |                                 |
-//*                                   Local
-//*   Global                        ------------------------------------
-//*                                 |                                    |
-//*                                Block scope                       Function scope (var is fucntion scoped)
-//*          (let , const are blocked var will be accessed)            nothing accessible .let and const are also function scoped
-//* (let/const we can't access outside block)
+//!                 Scope 
+//!                   |
+//!                   |
+//!   -----------------------------------
+//!   |                                 |
+//!                                   Local
+//!   Global                        --------------------------------------
+//!                                 |                                    |
+//!                                Block scope                       Function scope (var is fucntion scoped)
+//!          (let , const are blocked var will be accessed)            nothing accessible(let,const,var outside the fucntion) .let and const are also function scoped
+//! (let/const we can't access outside block)
 
-//* when we use if condition we can access var outside ==> {}
+//! when we use if condition we can access var outside ==> {}
 
     // let a = "RRR"
     // if(true){
@@ -498,8 +499,8 @@
     
 
 //! Javascript Currying 
-//* if we want any function in globally called then we have to return those fucntion and write ()() according to no of function we have to call 
-//* if we have nested function then we can call them by parent function using ()() and those funcition should be return 
+//! if we want any function in globally called then we have to return those fucntion and write ()() according to no of function we have to call 
+//! if we have nested function then we can call them by parent function using ()() and those funcition should be return 
 
 // let a = () =>{
 //     console.log("a block executed")
@@ -516,7 +517,16 @@
 
 
 //! Closure
-//* The ability of javascript engine to search for a variable into the another fucntion block (only parent function) is called as lexical scoping or Closure
+//! The ability of javascript engine to search for a variable into the another function block (only parent function) is called as  Closure
+//! 1. A closure is created when a function is defined within another function and inner function
+//! need to access variables in the outer function's scope.
+//! 2. Closure helps to achieve lexical scope from child function to parent function.
+//! 3. Closure preserves the state of parent function even after the execution of parent function is
+//! completed.
+//! 4. A child function will have reference to the closure.
+//! 5. Every time a parent function is called the new closure is created.
+//! 6. Disadvantage : High memory consumption
+
 // let minku =()=>{
 //     let bike = "splender"
 //     let mobile = "Iphone"
@@ -528,6 +538,10 @@
 // let returnedFu = minku();
 // returnedFu();
 
+//! Lexical Scope:-
+//! 1. The ability of js engine to search for a variable in the outer scope when variable is not available in local
+//! scope is known as lexical scope or scope chain.
+//! 2. It is ability of child to access variable from outside if its not present in local scope
 
 //* ability of js engine to search for the variable from the function even the function are removed from the call stacks and these value are stored in closure
 
@@ -543,13 +557,14 @@
 // console.log("10" - 10)
 // console.log("10" / 10)
 // console.log("10" * 10)
-// when we concatinate any string and proper a number and if we use any mathmatical operation like + this will give the priority to concatination and if we use any other - ,/, * it will typecast automatically 
+//! when we concatinate any string and proper a number and if we use any mathmatical operation like + this will give the priority to concatination and if we use any other - ,/, * it will typecast automatically 
 
 // let  num  = prompt("Enter the Number")
 // if(num %2==0){
 //     console.log(`${num} is an Even Number`)
 // }else{
 //     console.log(`${num} is an Odd Number`)
+// }
     
 
 // let isHungry= true
@@ -625,7 +640,7 @@
 
 
 // let i=0
-// while(i>10){
+// while(i<10){
 //     console.log("hello",i)
 //     i++
 // }
@@ -660,22 +675,22 @@
 // console.log(students.driving())
 
 
-// !creating object using object literal 
+//! 1:- Creating object using object literal 
 // let obj ={
-    //     namee:"prashad"
-    // }
-    // obj.add="Noida"
-    // console.log(obj)
-    // obj.namee="xyz"
-    // console.log(obj)
+//         namee:"prashad"
+//     }
+//     obj.add="Noida"
+//     console.log(obj)
+//     obj.namee="xyz"
+//     console.log(obj)
     
-    // !creating object with new keyword
+//! 2:- Creating object with new keyword
     // let objWithNewKeyword = new Object({name:"tinku"})
     // console.log(objWithNewKeyword)
     // objWithNewKeyword.add = "Noida"
     // console.log(objWithNewKeyword)
     
-    // !creating object with factory function
+//! 3:- Creating object with factory function
     
     // let student1 = {
         //     name:"Tinku",
@@ -713,7 +728,7 @@
     
  // !primitive are immutuable  & non primitve data type are mutable
  
- // !creating object using class
+ //! 4:- creating object using class
  
  //  class Car{
     //     constructor(name ,brand ,price){
@@ -730,7 +745,7 @@
         //  console.log(car2)
         //  console.log(car3)
         
-        // !creating object using Constructor function 
+//! 5:- creating object using Constructor function 
         // here we don't use arrow function because we are using this keyword 
         // let Students = function(name,add){
         //     this.name = name,
@@ -740,8 +755,6 @@
         // console.log(student1)
 
 
-
-
 //  !delete the properties from an object
 //  !delete is an unary operator and . is also a operator and typeof is also unary operator
 // let obj = {
@@ -749,7 +762,11 @@
 //     add:"Noida"
 // }
 // console.log(obj)
-// delete obj.addlet country = {
+// delete obj.add
+// console.log(obj)
+
+
+// let country = {
 //     name:"India",
 //     state :{
 //         name:"Uttarpradesh",
@@ -765,11 +782,10 @@
 //     }
 // }
 
-// console.log(obj)
 
 // !we can creat nested objects
 
-// 
+
 // console.log(country.state.district.city.sector.name)
 
 
@@ -1071,18 +1087,18 @@
 // !Purpose: Creates a new function that, when called, has its this value set to a specific object. It does not invoke the function immediately but returns a new function that you can call later.
 // !When to Use: Use bind() when you want to create a new function with a preset this value and possibly some initial arguments, which you can call later.
 
-let obj ={
-    name:"Tinku",
-    age:22,
-    add:"Noida"
-}
- function info(a,b){
-    console.log(`my name is ${this.name} and my age is ${this.age} i live in ${this.add} `)
-    console.log(a+b)
- }
+// let obj ={
+//     name:"Tinku",
+//     age:22,
+//     add:"Noida"
+// }
+//  function info(a,b){
+//     console.log(`my name is ${this.name} and my age is ${this.age} i live in ${this.add} `)
+//     console.log(a+b)
+//  }
 
-let returnedFunc= info.bind(obj)
-returnedFunc(10,20)
+// let returnedFunc= info.bind(obj)
+// returnedFunc(10,20)
 
 // !ARRAY 
 // !it is a continous block of memory which contain hetrogenous data .
