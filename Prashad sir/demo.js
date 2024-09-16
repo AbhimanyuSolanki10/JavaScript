@@ -765,6 +765,7 @@
 // delete obj.add
 // console.log(obj)
 
+// !we can create nested objects
 
 // let country = {
 //     name:"India",
@@ -781,16 +782,11 @@
 //         }
 //     }
 // }
-
-
-// !we can creat nested objects
-
-
 // console.log(country.state.district.city.sector.name)
 
 
 // let myApi =[{
-//     name:"India",
+//     name:"India",   
 //     state :{
 //         name:"Uttarpradesh",
 //         district :{
@@ -819,22 +815,20 @@
 //     income:"110cr"
 // }
 
-// key is used to get the only key of the object
+//! key is used to get the only key of the object
 // let allkeys = Object.keys(movie)
 // console.log(allkeys)
-// values is used to get the only values of the object
+//! values is used to get the only values of the object
 // let allvalues = Object.values(movie)
 // console.log(allvalues)
-// entries is used to get the all entries  of the object
+//! entries is used to get the all entries  of the object
 // let allEntries = Object.entries(movie)
 // console.log(allEntries)
 
-// !assign objects to an object
-// ! here obj1 is updated it will not creat new object after assigning
+//todo   assign objects to an object
+// ! here obj1 is updated it will not create new object after assigning
 
-// let student1 = {
-//     name:"tinku"
-// }
+// let student1 = { name:"tinku"}
 // let student2 ={ add:"Noida"}
 // let student3 ={contact:7896541236}
 // let student4 ={age:22}
@@ -858,27 +852,27 @@
 
 // console.log(movie.actor.actor1)
 // console.log(movie["actor"]["actor3"])
+
 // !haOwnProperty and in
 // !these two will check is that property exist or not 
 // console.log(movie.hasOwnProperty('income'))
 // console.log("income" in movie)
-// console.log(Object.movie.includes('income'))
+// console.log(Object.movie.includes('income'))    
 
 
 
 // !By using freeze we cannot update or delete  or add any value in th object
 // let obj = {
-    //     name:"tinku"
-    // }
-    // Object.freeze(obj)
-    // delete obj.name
-    // obj.add="Noida"
-    // obj.name="pinku"
-    // console.log(obj)
+//         name:"tinku"
+//     }
+//     Object.freeze(obj)
+//     delete obj.name
+//     obj.add="Noida"
+//     obj.name="pinku"
+//     console.log(obj)
 
 
-
-    // !By using seal we cannot  delete  or add any value in th object but we can update existing properties
+// !By using seal we cannot  delete  or add any value in th object but we can update existing properties
 // let obj = {
 //     name:"tinku"
 // }
@@ -898,9 +892,6 @@
 // console.log(Object.isSealed(obj))
 
 
-
-
-
 // let name = "tinku"
 // let phone = 9886596586
 // let add = "Noida"
@@ -912,14 +903,14 @@
 // let person = {
 //     name,  //! simplified method we can write in this form also only the variable should be declared 
 //     phone,
-//     add 
+//     add          
 // }
 // console.log(person)
 
 
 
 
-//! we creat the copy of obj1  and this will only point to the address of obj1 and this copy is called shallow copy.
+//! we create the copy of obj1  and this will only point to the address of obj1 and this copy is called shallow copy.
 
 // !Shallow copy:- copy and orignal objects points towwards same memory address
 // let obj1 = {
@@ -927,8 +918,10 @@
 //     add:"Noida"
 // }
 // let obj2 = obj1
+// console.log(obj1)
 // console.log(obj2)
 // obj2.phone=78936541236
+// console.log(obj2)
 // console.log(obj1)
 
 
@@ -1206,8 +1199,8 @@
 // ! b-a will give descending
 
 // let arr = nums.sort((a,b) =>{
-    //     return a-b
-    // })
+//         return a-b
+//     })
 // console.log(arr)
 
 // !FOREACH LOOP
@@ -1223,9 +1216,9 @@
     
     // let nums = [7,3,4,9,1,4,6,8]
     // let a = nums.forEach((value,index,arr) =>{
-        //         console.log(index + "," +(value+100) , arr)
-        //     })
-        // console.log(a)
+    //             console.log(index + "," +(value+100) , arr)
+    //         })
+    //     console.log(a)
         
         // let arr = [2,3,4,5,6]
         // let newarr =[]
@@ -1256,7 +1249,7 @@
 
         // let nums = [675,837,735,643,53,243,9,64]
         // for(val of nums){
-            //     console.log(val)
+        //         console.log(val)
             // }
             
         // let nums = [675,837,735,643,53,243,9,64]
@@ -1269,37 +1262,54 @@
         // !MAP
         // let nums = [675,837,735,643,53,243,9,64]
         // nums.map((val,i)=>{
-            //     console.log(val)
-            // })
-            // let newArr = nums.map((val,i)=>{
+                // console.log(val)
+        //     })
+
+        //     let newArr = nums.map((val,i)=>{
         //     return val+100
         // })
+
+
         // let newArr = nums.filter((val,i)=>{
         //     return val>400
         // })
+
+
         // let newArr = nums.reduce((acc,val,i)=>{
-            //     return acc +=val
-            // })
-        // let newArr =for(val of nums){
-        //     return 
-        // }
-        // let newArr =for(val in nums){
-        //     return 
-        // }
-        // let newArr= nums.sort((a,b)=>{
-        //     return b-a
-        // })
+        //         return acc +=val
+        //     })
+
+        //! This will not return any value
         
+        // let newArr =nums.for(val of nums){
+            //     return  
+            // }
+            
+            
+        //! This will not return any value
+        // let newArr =for(val in nums){
+            //     return 
+            // }
+            
+            
+            // let newArr= nums.sort((a,b)=>{
+                //     return b-a
+                // })
+                
+                
+        //! This will not return any value
         // let newArr = nums.forEach((val,i)=>{
-            //     return val+100
-            // })
+        //         return val+100
+        //     })
+
+
             // console.log(newArr)
             // console.log(nums)
             
             
             
             //  method name     isReturning    isModifying orignal array?   used in 
-            // forEach      No              No                          we can access value indexes &b array on each iteration
+            // forEach      No              No                          we can access value indexes &  array on each iteration
             // map          yes             No                          returned an array updated array
             // filter       yes             No                          apply condition to filter the array
             // reduce       yes             No                          always return single valued
@@ -1311,27 +1321,28 @@
             // !map method will return an array 
             // let nums = [675,837,735,643,53,243,9,64]
             // nums.map((val, i, arr)=>{
-                //     console.log(val,i)
-                // })
+            //         console.log(val,i,nums)
+            //     })
                 // ! foreach  method will not return anything 
                 // console.log(`------------------------------`)
                 // let a =nums.forEach((element, i)=>{
-                    //     console.log(element,i)
-                    //     return element+100
-                    // })
-                    // console.log(a)
+                //         console.log(element,i)
+                //         return element+100
+                //     })
+                //     console.log(a)
                 
                     // ! foreach  method will not return anything 
                     // let nums1 = [675,837,735,643,53,243,9,64]
                     // let c= nums1.forEach((val,i,arr)=>{
-                        //     return val +1000
-                        // })
+                    //         return val +1000
+                    //     })
                         // !map method will return an array 
                         //    let b = nums1.map((val,i,arr)=>{
-                            //         return val+1000
-                            //     })
-                            //     console.log(b)
-                            //     console.log(c)
+                        //             return val+1000
+                        //         })
+                        //         console.log(b)
+                        //         console.log(nums1)
+                        //         console.log(c)
                             
                 //  !Filter method :- It will filter out the data according to your given conditon    
 
@@ -1339,24 +1350,24 @@
             //   let newArr = []
             //   for(let i =0;i<nums.length;i++){
             //     if(nums[i]>300){
-                //         newArr.push(nums[i])
-                //     }
+            //             newArr.push(nums[i])
+            //         }
             //   }
             //   console.log(newArr)
                             
                 // !Using of inbuilt method   
                 //   let nums = [675,837,735,643,53,243,9,64]
                 //   let filteredArr =nums.filter((val)=>{
-                    //     return 10
-                    //   })
-                    //   console.log(filteredArr)
+                //         return 10
+                //       })
+                //       console.log(filteredArr)
                     
                     // let arr = [NaN , 10 , 10.10 , 10n ,"Hello"]
                     // let newArr =arr.filter((val,i)=>{
-                        //     console.log(typeof val);
-                        //     return (typeof val =='number')
-                        // })
-                        // console.log(newArr)
+                    //         console.log(typeof val);
+                    //         return (typeof val =='number')
+                    //     })
+                    //     console.log(newArr)
                         
                         
                         // !Reduce method :-  it will always return single value .
